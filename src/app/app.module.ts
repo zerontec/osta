@@ -8,23 +8,25 @@ import { HeaderComponent } from './shared/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { LayoutComponent } from './layout/layout.component';
-import { FlexModule } from '@angular/flex-layout';
-/* import { MatTabsModule } from '@angular/material/tabs'; */
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { SidenavListComponent } from './shared/sidenav-list/sidenav-list.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    LayoutComponent
+    LayoutComponent,
+    SidenavListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FlexModule,
+    FlexLayoutModule,
     CoreModule,
-    /* MatTabsModule */
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
